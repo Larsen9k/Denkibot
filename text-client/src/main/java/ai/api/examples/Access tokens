@@ -1,0 +1,6 @@
+Denne er for å nå boten via GUI. Denne token må legges inn i "program arguments" under "Run configurations"...
+Client access token: 43884cf2d77847abb9018b8c92c06993
+
+
+Denne er for å videreutvikle boten gjennom JSON kommandoer.
+Developer access token: 0c175cc133d54653a8e62085a13c5348

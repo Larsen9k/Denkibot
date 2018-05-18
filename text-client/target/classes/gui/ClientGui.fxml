@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffaa00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FxControl">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffaa00;">
+         <children>
+            <MenuBar fx:id="menuBar" layoutY="-1.0" prefHeight="25.0" prefWidth="813.0" style="-fx-background-color: white;">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="menuNS" mnemonicParsing="false" text="New Session" />
+                        <MenuItem fx:id="menuExit" mnemonicParsing="false" onAction="#closeApp" text="Exit Application" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Options">
+                     <items>
+                        <MenuItem fx:id="menuColor" mnemonicParsing="false" text="Color" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                  <items>
+                    <MenuItem fx:id="aboutDF" mnemonicParsing="false" onAction="#webLink" text="Dialogflow" />
+                  </items>
+                </Menu>
+              </menus>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MenuBar>
+            <TextArea fx:id="chatWindow" editable="false" layoutX="101.0" layoutY="174.0" prefHeight="351.0" prefWidth="600.0" promptText="Velkommen til Denkibot Demo. Si &quot;Hallo&quot; for å starte en samtale." style="-fx-background-color: black;" stylesheets="@application.css">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextArea>
+            <TextField fx:id="userInput" layoutX="101.0" layoutY="539.0" onAction="#sendMsg" prefHeight="27.0" prefWidth="504.0" promptText="Skriv meldingen her..." style="-fx-background-color: white; -fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button id="sendBtn" fx:id="sendBtn" layoutX="621.0" layoutY="536.0" mnemonicParsing="false" onAction="#sendMsg" prefHeight="32.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: black;" stylesheets="@application.css" text="Send">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="146.0" fitWidth="455.0" layoutX="173.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@denki.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
