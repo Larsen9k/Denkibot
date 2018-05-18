@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 
 //scene builder gjør slik at vi ikke kan lage chatbobler.
 import ai.api.examples.TextClientApplication;
-import gui.Main;
+import gui.GUI;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,17 +18,18 @@ import javafx.scene.control.TextField;
 
 public class FxControl {
 	
+	public TextClientApplication dialogFlow;
+	
 	@FXML
-	public Button sendBtn;
+	private Button sendBtn;
 	public TextField userInput;
 	public TextArea chatWindow;
-	public MenuItem menuExit, aboutDF, colorMenu;
-	public MenuBar menuBar;
-	public TextClientApplication dialogFlow;
+	private MenuItem menuExit, aboutDF;
+	private MenuBar menuBar;
 	private Thread waitForMessage;
 	
-	 public void initialize() {
-	        dialogFlow = Main.getDialogFlow();
+	public void initialize() {
+	        dialogFlow = GUI.getDialogFlow();
 	        userInput.textProperty().addListener(((o, oldString, newString) -> listenToUserInput(oldString, newString)));
 	        sendBtn.setDisable(true);     
 	 }
@@ -42,7 +43,7 @@ public class FxControl {
 	}
 	
 	//setter maks 70 tegn
-	public void listenToUserInput(String oldMessage, String newString) {
+	private void listenToUserInput(String oldMessage, String newString) {
 		if(newString.length() == 0) {
 			sendBtn.setDisable(true);
 		}

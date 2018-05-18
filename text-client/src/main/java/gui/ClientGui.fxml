@@ -22,9 +22,6 @@
                   </items>
                 </Menu>
                   <Menu mnemonicParsing="false" text="Options">
-                     <items>
-                        <MenuItem fx:id="menuColor" mnemonicParsing="false" text="Color" />
-                     </items>
                   </Menu>
                 <Menu mnemonicParsing="false" text="About">
                   <items>
