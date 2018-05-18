@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class GUI extends Application {
 	
-	public MenuItem menuExit;
+	private MenuItem menuExit;
 	
 	@Override
 	public void start(Stage primaryStage) {
