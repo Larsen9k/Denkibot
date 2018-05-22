@@ -42,10 +42,10 @@ public class TextClientApplication {
     
     public TextClientApplication(String[] args, FxControl controller){
     	this.controller = controller;
-    	createAiBot(args);
+    	AIConnect(args);
     }
 
-    public void createAiBot(String[] args) {
+    public void AIConnect(String[] args) {
         if (args.length < 1) {
             showHelp("Please specify API key", 1);
         }
