@@ -16,7 +16,7 @@ import javafx.scene.control.TextField;
 
 /**
  * Er controlleren for FXML filen.
- * @author Lars. Truls og Marius
+ * @author Lars, Truls og Marius.
  *
  */
 
@@ -45,6 +45,7 @@ public class FxControl {
         userInput.clear();
 	}
 	
+	
 	//setter maks 300 tegn og at man må skrive noe før man får lov til å sende en melding
 	private void listenToUserInput(String oldMessage, String newString) {
 		if(newString.length() == 0) {
@@ -62,7 +63,7 @@ public class FxControl {
 		}
 	}
 	
-	/*lager en unil thread for å behandle informasjonen av agenten. 
+	/*lager en unik thread for å behandle informasjonen av agenten. 
 	Threaden vill sjekke hvert 10ms For å se om det har kommet en respons.
 	Dette er også en metode for å unngå spam.
 	*/
@@ -107,9 +108,10 @@ public class FxControl {
 	
 	
 	/**
-	 * setter TextClientApplication objectet så denne classen kan kalle på metoder.
+	 * setter TextClientApplication objektet så denne klassen kan kalle på metoder.
 	 * @param dialogFlow
 	 */
+	
 	public void setDialogFlow(TextClientApplication dialogFlow) {
 		this.dialogFlow = dialogFlow;
 	}

@@ -13,7 +13,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Main classen lager objectene og blir callet når programmmet kjører
+ * GUI klassen lager objektene og blir kalt på når programmmet kjører
  * @author Lars, Truls og Marius
  *
  */
@@ -23,9 +23,9 @@ public class GUI extends Application {
 	String sendMsg = "";
 	static String[] apiInfo;
 	/**
-	 * Lager ett FxControl object som håndterer gui
-	 * Og ett TextClientApplication som representer dialogflow komunikasjonnen
-	 * FxControl objectet blir laget av FXML fila. Og FxControl er controlleren til fila.
+	 * Lager et FxControl objekt som håndterer gui
+	 * Og ett TextClientApplication som representer dialogflow komunikasjonen
+	 * FxControl objektet blir laget av FXML filen. Og FxControl er controlleren til filen.
 	 * Starter også 
 	 */
 	
@@ -45,9 +45,9 @@ public class GUI extends Application {
 		}
 		
 		/**
-		 * Starter scena med DenkiBot
-		 * @param primaryStage er scena
-		 * @param root er panen som er root for scena
+		 * Starter en scene med DenkiBot
+		 * @param primaryStage er scene
+		 * @param root er panen som er root for scene
 		 */
 	
 		private void invokeScene(Stage primaryStage, Parent root) {
