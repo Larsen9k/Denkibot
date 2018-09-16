@@ -1,8 +1,8 @@
 # Denkibot
-Denkibot er en chatrobot laget med Dialog Flow
+Denkibot is a chatbot powered by Dialogflow
 
-For at programmet skal kjøres må hele prosjektet lastet ned, siden prosjektet var for stort i størrelse ble vi nødt til å legge
-det inn som en zip fil.
+To run this program the whole project needs to be downloaded. Since this project was so huge I had to put it into a .zip file.
 
-text-client er det vi har rørt gjennom prosjektet våres.
+The only files I've touched is the file text-client. That is the file which contains all the necessary code for it to run in our GUI connected to Dialogflow servers.
+
 Full path: Denkibot/text-client/src/main/java/
